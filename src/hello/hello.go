@@ -43,7 +43,6 @@ func main() {
 	fmt.Println(aasd)
 	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
 
-
 	var i int
 	var f float64
 	var b bool
