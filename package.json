@@ -1,0 +1,17 @@
+{
+  "name": "go_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon --exec \"npm run build && npm run start\" --watch hello.go",
+    "build": "cd src/hello && go build",
+    "start": "./src/hello/hello.go",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
