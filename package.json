@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "nodemon --exec \"npm run build && npm run start\" --watch hello.go",
     "build": "cd src/hello && go build",
-    "start": "./src/hello/hello.go",
+    "start": "./src/hello/hello",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

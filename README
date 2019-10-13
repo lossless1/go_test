@@ -1,0 +1,18 @@
+# Installation
+## Requirements
+install `go`
+
+## Watch and rebuild in realtime
+`npm run watch`
+
+## Run
+`npm run start`
+
+## Build
+`npm run build`
+
+## Recomended redactor - VSCode
+Extensions
+```
+go https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go
+```
