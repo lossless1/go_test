@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "WATCHFILE=1 nodemon --exec \"npm run build && npm run start\" --watch ./src/$WATCHFILE/$WATCHFILE.go",
-    "build": "cd src/$WATCHFILE && go build",
-    "start": "./src/$WATCHFILE/$WATCHFILE",
+    "watch": "nodemon --exec \"npm run goRun\" --watch ./src/1/1.go",
+    "goRun": "cd src/next && go run next.go",
+    "build": "cd src/1 && go build",
+    "start": "./src/1/1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

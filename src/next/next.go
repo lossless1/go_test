@@ -11,11 +11,8 @@ type User struct {
 
 var mapUser = map[string]User{
 	"hello": User{
-		"hello"
-	},
-	"world": User{
-		"hello"
-		"world"
+		name:     "nametext",
+		username: "usernametext",
 	},
 }
 
@@ -25,11 +22,13 @@ func printSlice(s string, x []int) {
 }
 
 func main() {
-	mapUser = make(map[string]User)
-	mapUser["hello world"] = User{"vladimir", "saakyan"}
-	mapUser["hello world2"] = User{"vladimir", "saakyan"}
+	// mapUser = make(map[string]User)
+	// mapUser["hello world"] = User{"vladimir", "saakyan"}
+	// mapUser["hello world2"] = User{"vladimir", "saakyan"}
 	for i, v := range mapUser {
 		fmt.Println(i, v)
 	}
 	fmt.Println(mapUser)
+	var sc int = 1
+	fmt.Println(sc)
 }
