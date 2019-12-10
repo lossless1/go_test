@@ -1,34 +1,26 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-type User struct {
-	name     string
-	username string
+type TInterface interface {
+	message()
 }
 
-var mapUser = map[string]User{
-	"hello": User{
-		name:     "nametext",
-		username: "usernametext",
-	},
+type TStruct struct {
 }
 
-func printSlice(s string, x []int) {
-	fmt.Printf("%s len=%d cap=%d %v\n",
-		s, len(x), cap(x), x)
+func (tStruct *TStruct) message() {
+	if tStruct == nil {
+		fmt.Println("<nil>")
+	}
+	// fmt.Println(tStruct.s)
 }
 
 func main() {
-	// mapUser = make(map[string]User)
-	// mapUser["hello world"] = User{"vladimir", "saakyan"}
-	// mapUser["hello world2"] = User{"vladimir", "saakyan"}
-	for i, v := range mapUser {
-		fmt.Println(i, v)
-	}
-	fmt.Println(mapUser)
-	var sc int = 1
-	fmt.Println(sc)
+	var tInterface TInterface
+	var tStruct *TStruct
+	tInterface = tStruct
+
+	tInterface = &TStruct{}
+	tInterface.message()
 }

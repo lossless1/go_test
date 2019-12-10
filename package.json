@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon --exec \"npm run goRun\" --watch ./src/1/1.go",
-    "goRun": "cd src/next && go run next.go",
-    "build": "cd src/1 && go build",
+    "watch": "nodemon --exec \"npm run goRun\" --watch ./src/channel/channel.go",
+    "goRun": "go run src/channel/channel.go",
+    "build": "go src/1/build",
     "start": "./src/1/1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
