@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon --exec \"npm run goRun\" --watch ./src/channel/channel.go",
-    "goRun": "go run src/channel/channel.go",
+    "watch": "nodemon --exec \"npm run goRun\" --watch ./src/http/server.go",
+    "goRun": "go run src/http/server.go",
     "build": "go src/1/build",
-    "start": "./src/1/1",
+    "start": "npm run goRun",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
